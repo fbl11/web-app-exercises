@@ -11,8 +11,10 @@ end
 
 get '/shotgun' do
   'Now with shotgun'
+  erb "Hi there, Visitor!"
 end
 
 get '/cat' do
+  @cat_name = ["Amigo", "Oscar", "Viking"].sample
   erb(:index)
 end
